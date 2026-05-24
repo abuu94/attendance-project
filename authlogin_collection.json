@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "FakeStore Auth",
+    "_postman_id": "97531-opqrs-86420",
+    "description": "Collection to test FakeStore Auth/Login API endpoint",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login User",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"mor_2314\",\n  \"password\": \"83r5^_\"\n}"
+        },
+        "url": "{{baseUrl}}/auth/login"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://fakestoreapi.com"
+    }
+  ]
+}

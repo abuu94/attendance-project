@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{baseUrl}}/carts/1"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "userId": 1,
+      "date": "2026-05-25",
+      "products": [
+        {"productId": 1, "quantity": 5}
+      ]
+    }
+order: 4000

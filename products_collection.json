@@ -1,0 +1,65 @@
+{
+  "info": {
+    "name": "FakeStore Products",
+    "_postman_id": "67890-fghij-12345",
+    "description": "Collection to test FakeStore Products API endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Products",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/products"
+      }
+    },
+    {
+      "name": "Get Single Product",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/products/1"
+      }
+    },
+    {
+      "name": "Add New Product",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"New Book\",\n  \"price\": 29.99,\n  \"description\": \"A beginner's guide to Postman\",\n  \"image\": \"https://i.pravatar.cc\",\n  \"category\": \"books\"\n}"
+        },
+        "url": "{{baseUrl}}/products"
+      }
+    },
+    {
+      "name": "Update Product",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Updated Book\",\n  \"price\": 34.99,\n  \"description\": \"An advanced guide to Postman\"\n}"
+        },
+        "url": "{{baseUrl}}/products/1"
+      }
+    },
+    {
+      "name": "Delete Product",
+      "request": {
+        "method": "DELETE",
+        "url": "{{baseUrl}}/products/1"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://fakestoreapi.com"
+    }
+  ]
+}

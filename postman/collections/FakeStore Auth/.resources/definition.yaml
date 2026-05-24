@@ -1,0 +1,4 @@
+$kind: collection
+description: Collection to test FakeStore Auth/Login API endpoint
+variables:
+  baseUrl: https://fakestoreapi.com

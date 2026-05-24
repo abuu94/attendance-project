@@ -1,0 +1,65 @@
+{
+  "info": {
+    "name": "FakeStore Carts",
+    "_postman_id": "24680-ijklmn-13579",
+    "description": "Collection to test FakeStore Carts API endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Carts",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/carts"
+      }
+    },
+    {
+      "name": "Get Single Cart",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/carts/1"
+      }
+    },
+    {
+      "name": "Add New Cart",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": 1,\n  \"date\": \"2026-05-25\",\n  \"products\": [\n    {\"productId\": 1, \"quantity\": 2},\n    {\"productId\": 2, \"quantity\": 1}\n  ]\n}"
+        },
+        "url": "{{baseUrl}}/carts"
+      }
+    },
+    {
+      "name": "Update Cart",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": 1,\n  \"date\": \"2026-05-25\",\n  \"products\": [\n    {\"productId\": 1, \"quantity\": 5}\n  ]\n}"
+        },
+        "url": "{{baseUrl}}/carts/1"
+      }
+    },
+    {
+      "name": "Delete Cart",
+      "request": {
+        "method": "DELETE",
+        "url": "{{baseUrl}}/carts/1"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://fakestoreapi.com"
+    }
+  ]
+}

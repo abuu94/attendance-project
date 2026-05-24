@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/carts"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "userId": 1,
+      "date": "2026-05-25",
+      "products": [
+        {"productId": 1, "quantity": 2},
+        {"productId": 2, "quantity": 1}
+      ]
+    }
+order: 3000

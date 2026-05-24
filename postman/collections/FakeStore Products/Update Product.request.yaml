@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/products/1"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "title": "Updated Book",
+      "price": 34.99,
+      "description": "An advanced guide to Postman"
+    }
+order: 4000

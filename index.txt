@@ -1,0 +1,5 @@
+
+https://fakestoreapi.com/auth/login
+https://fakestoreapi.com/users/
+https://fakestoreapi.com/products/
+https://fakestoreapi.com/carts/

@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/carts"
+method: GET
+order: 1000

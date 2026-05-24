@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{baseUrl}}/products"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "title": "New Book",
+      "price": 29.99,
+      "description": "A beginner's guide to Postman",
+      "image": "https://i.pravatar.cc",
+      "category": "books"
+    }
+order: 3000

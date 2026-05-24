@@ -1,0 +1,4 @@
+$kind: collection
+description: Combined collection for FakeStore API (Users, Products, Carts, Auth/Login)
+variables:
+  baseUrl: https://fakestoreapi.com

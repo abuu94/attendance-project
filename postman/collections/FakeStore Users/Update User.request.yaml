@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/users/1"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "email": "abuuy_updated@example.com",
+      "username": "abuuy_updated",
+      "password": "newpassword123"
+    }
+order: 4000

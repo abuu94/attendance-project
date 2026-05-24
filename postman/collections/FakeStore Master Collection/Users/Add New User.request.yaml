@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/users"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "email": "abuuy@example.com",
+      "username": "abuuy",
+      "password": "password123",
+      "name": {"firstname": "Abubakar", "lastname": "Ali"},
+      "address": {"city": "Zanzibar", "street": "Stone Town", "number": 12, "zipcode": "12345", "geolocation": {"lat": "-26.0", "long": "28.0"}},
+      "phone": "+255712345678"
+    }
+order: 3000
