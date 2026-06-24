@@ -21,7 +21,7 @@ The system is now functional end-to-end, enabling meeting management, day summar
 ---
 
 ## 💻 Frontend (React + Vite + Tailwind)
-- Dev server accessible via: `http://meeting.deploy.tz:8080`
+- Dev server accessible via: `https://meeting.deploy.tz`
 - Integrated with backend APIs
 - Features:
   - Tabs for **Summary | Tokens | Registrations | Attendance**
